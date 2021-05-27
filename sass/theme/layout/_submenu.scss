@@ -1,0 +1,56 @@
+.sub-menu-section {
+	.sub-menu-toggle {
+		display: none;
+		width: 100%;
+		border-radius: 0;
+
+		&:active, &:focus {
+			outline: 0;
+		}
+
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+	}
+
+	.menu {
+		padding-left: 0;
+		background: $primary;
+		text-align: center;
+		li {
+			display: inline-block;
+			list-style-type: none;
+
+			@include media-breakpoint-down(sm) {
+				display: block;
+			}
+
+			a {
+				display: block;
+				padding: .5rem 1rem;
+				color: $white;
+				font-family: $headings-font-family;
+				font-size: .85rem;
+				text-transform: uppercase;
+
+				&:hover {
+					text-decoration: none;
+					background: darken($secondary, 20%);
+				}
+			}
+
+			&.current-menu-item {
+				a {
+					background: darken($secondary, 20%);
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		.sub-menu-collapse {
+			display: block !important;
+		}	
+	}
+	
+}

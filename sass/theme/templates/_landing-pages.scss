@@ -1,0 +1,37 @@
+.lp-background {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	background: url('/wp-content/uploads/2015/11/page-title-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: $white;
+	font-weight: bold;
+}
+
+.single-landing_pages {
+	#single-wrapper,#content {
+		padding-top: 0 !important;
+	}
+
+	.gform_body {
+		input, textarea {
+			border-radius: 6px;
+			border: 1px solid #999;
+		}
+	}
+
+	.gform_button {
+		background: $secondary;
+		border: 0;
+	}
+}
+
+.no-margin {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.testimonial-border {
+	padding: 2rem 1rem;
+	border: 1px solid #828282;
+}

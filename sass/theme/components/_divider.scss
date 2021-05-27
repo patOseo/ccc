@@ -1,0 +1,27 @@
+hr.divider,hr.wp-block-separator {
+	margin: 2rem 0;
+	border-width: 6px;
+	max-width: 60px;
+
+	&.long-dashed {
+		max-width: 100%;
+		border-width: 1px;
+		border-style: dashed;
+	}
+
+	&.small {
+		margin: 1rem 0;
+	}
+
+	&.blue {
+		border-color: $primary;
+	}
+
+	&.red {
+		border-color: $secondary;
+	}
+
+	&.thin {
+		border-width: 3px;
+	}
+}

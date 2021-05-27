@@ -1,0 +1,31 @@
+.news-box {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	box-shadow: 1px 5px 20px -6px rgba(97,96,96,.25);
+	color: $black;
+	transition: 0.2s;
+	min-height: 280px;
+
+	&:hover {
+		box-shadow: 1px 5px 20px -6px rgba(35,51,97,.6);
+	}
+
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	h3 {
+		color: $secondary;
+		font-size: 1.5rem;
+	}
+
+	img {
+		margin-bottom: 1rem;
+	}
+
+	p {
+		font-size: .925rem;
+	}
+}

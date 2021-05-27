@@ -1,0 +1,40 @@
+#left-sidebar {
+	.menu {
+		padding-left: 0;
+		li {
+			list-style-type: none; 
+
+			a {
+				padding: 15px 25px;
+    			background: #f7f7f7;
+    			color: #222;
+    			font-size: 13px;
+    			position: relative;
+    			display: inline-block;
+    			width: 100%;
+
+    			&:after {
+    				content: "\f105";
+    				font-family: FontAwesome;
+    				position: absolute;
+    				right: 15px;
+    				top: 50%;
+    				transform: translateY(-50%);
+    			}
+
+    			&:hover {
+    				background-color: $primary;
+    				color: $white;
+    				text-decoration: none;
+    			}
+			}
+
+			&.current-menu-item {
+				a {
+					background-color: $primary;
+    				color: #fff;
+				}
+			}
+		}
+	}
+}

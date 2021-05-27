@@ -1,0 +1,24 @@
+// Areas Served
+
+.areas-served-block {
+	.card-columns {
+		column-count: 2;
+		@include media-breakpoint-up(md) {
+			column-count: 4;
+		}
+	}
+
+	.card {
+		margin-bottom: 1rem;
+		padding: .5em 1em;
+		font-size: 1.15rem;
+
+		a {
+			color: darken($secondary, 20%);
+		}
+
+		&.shadowbox {
+			box-shadow: 1px 5px 10px -6px rgba(35,51,97,.2);
+		}
+	}
+}

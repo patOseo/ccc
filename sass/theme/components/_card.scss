@@ -1,0 +1,78 @@
+// Card
+.card {
+	padding: 1rem;
+	border: 0;
+	background: transparent;
+
+	hr.divider {
+		margin: 1rem 0;
+
+		// @include media-breakpoint-down(lg) {
+		// 	margin: 4rem 0 2rem 0;
+		// }
+	}
+
+	.card-title {
+		margin-bottom: 0;
+		font-size: 1.25rem;
+		font-weight: 600;
+		line-height: initial;
+	}
+
+	.card-subtitle {
+		margin-bottom: 1rem;
+		font-weight: 700;
+		font-style: italic;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	.card-content {
+		font-size: 1rem;
+		font-weight: normal;
+		line-height: 1.65;
+	}
+
+	&.shadowbox {
+	    position: relative;
+	    margin-bottom: 2em;
+	    padding: 2em;
+	    border-radius: 10px;
+	    box-shadow: 1px 5px 20px -6px rgba(35, 51, 97, 0.2);
+	    line-height: 2;
+	    background: #fff;
+	    transition: all 0.2s;
+	
+	    .card-title {
+	        // position: absolute;
+	        // top: 0;
+	        // left: 0;
+	        // padding: 2rem;
+	        width: 100%;
+	        height: 100%;
+	        display: block;
+	
+	        a {
+	            display: block;
+	            width: 100%;
+	            height: 100%;
+	        }
+	    }
+	
+	    &.hover {
+	    	&:hover {
+	    		box-shadow: 1px 5px 20px -6px rgba(35, 51, 97, 0.6);
+	    		cursor: pointer;
+	            transform: scale(1.025);
+	    	}
+	    }
+	
+	    a {
+	    	text-decoration: none;
+	    }
+	
+	    &.narrow {
+	        line-height: 1.5;
+	    }
+	}
+}

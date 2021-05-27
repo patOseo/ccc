@@ -1,0 +1,31 @@
+.btn {
+	font-family: $headings-font-family;
+}
+
+.has-blue-background-color {
+	.btn-white {
+		&:hover {
+			background: $secondary;
+		}
+	}
+}
+
+.btn-white {
+	background: $white;
+	color: $primary;
+
+	&:hover {
+		background: $primary;
+		color: $white;
+	}
+}
+
+.btn-dark {
+	background: $darkgray;
+	color: $white;
+
+	&:hover {
+		background: $lightgray;
+		color: $black;
+	}
+}
