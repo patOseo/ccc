@@ -77,7 +77,7 @@ src="https://www.facebook.com/tr?id=154806398256826&ev=PageView&noscript=1"
 					<?php if(have_rows('social_media', 'option')): ?>
 						<div class="top-social-links">
 							<?php while(have_rows('social_media', 'option')): the_row(); ?>
-								<a href="<?php the_sub_field('link', 'option'); ?>" target="_blank" rel="noopener,noreferrer"><i class="fa <?php the_sub_field('icon'); ?>"></i></a>
+								<a href="<?php the_sub_field('link', 'option'); ?>" target="_blank" rel="noopener,noreferrer"><span class="sr-only">Canadian Carpet Cleaning on <?php the_sub_field('name'); ?></span><i class="fa <?php the_sub_field('icon'); ?>"></i></a>
 							<?php endwhile; ?>
 						</div>
 					<?php endif; ?>
