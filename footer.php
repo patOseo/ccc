@@ -37,9 +37,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if(have_rows('affiliations', 'option')): ?>
 				<div class="container">
 					<div class="row">
-						<?php while(have_rows('affiliations', 'option')): the_row(); $logo = get_sub_field('logo'); ?>
+						<?php while(have_rows('affiliations', 'option')): the_row(); $logo = get_sub_field('logo'); $link = get_sub_field('affiliation_link'); ?>
 							<div class="col">
-								<?php echo wp_get_attachment_image($logo, 'full'); ?>
+								<?php if($link): ?><a href="<?= $link; ?>" target="_blank"><?php endif; echo wp_get_attachment_image($logo, 'full'); if($link): echo "</a>"; endif; ?>
 							</div>
 						<?php endwhile; ?>
 					</div>
