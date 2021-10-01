@@ -68,12 +68,12 @@ src="https://www.facebook.com/tr?id=154806398256826&ev=PageView&noscript=1"
 	<div class="top-bar">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-9">
-					<div class="contact-item"><i class="fa fa-phone"></i><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></div> 
+				<div class="col-12 col-sm-9">
+					<div class="contact-item"><i class="fa fa-phone d-none d-md-inline"></i><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></div> 
 					<span class="divide">|</span> 
-					<div class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></div>
+					<div class="contact-item"><i class="fa fa-envelope d-none d-md-inline"></i> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></div>
 				</div>
-				<div class="col-3">
+				<div class="col-3 d-none d-sm-block">
 					<?php if(have_rows('social_media', 'option')): ?>
 						<div class="top-social-links">
 							<?php while(have_rows('social_media', 'option')): the_row(); ?>
