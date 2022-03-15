@@ -29,3 +29,19 @@
 		color: $black;
 	}
 }
+
+.wp-block-button__link {
+	font-family: $headings-font-family;
+	color: #fff;
+	background-color: $primary;
+	font-weight: 400;
+	font-size: 1rem;
+	border: 0;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+
+	&:hover {
+		text-decoration: none;
+		background-color: darken($primary, 15%);
+	}
+}
