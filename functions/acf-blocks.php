@@ -78,6 +78,7 @@ function acf_custom_blocks() {
 			'render_template'	=> 'global-templates/blocks/block-blog.php',
 			'category'			=> 'acf-blocks',
 			'icon'				=> 'text-page',
+			'mode'				=> 'edit',
 			'keywords'			=> array( 'blog', 'posts' ),
 		));
 
