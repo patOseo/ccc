@@ -35,7 +35,7 @@ $query = new WP_Query($args);
 					<div class="col-md-4">
 						
 							<div class="news-box position-relative">
-								<div class="featured-img"><?php echo get_the_post_thumbnail( $selected_post->ID, 'blogcrop' ); ?></div>
+								<div class="featured-img"><?php echo get_the_post_thumbnail( $selected_post->ID, 'large' ); ?></div>
 								<h3><?php if($title) { echo $title; } else { echo get_the_title($selected_post->ID); } ?></h3>
 								<?php if($hidedate != 1): ?>
 								<div class="news-date"><?php echo get_the_date('F j, Y', $selected_post->ID); ?></div>
