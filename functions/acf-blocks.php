@@ -105,6 +105,18 @@ function acf_custom_blocks() {
 			'icon'				=> 'format-quote',
 			'keywords'			=> array( 'testimonial', 'quote' ),
 		));
+
+		// testimonial block
+		acf_register_block(array(
+			'name'				=> 'promotions',
+			'title'				=> __('Promotions'),
+			'description'		=> __('A custom block to display promotions.'),
+			'mode'				=> 'edit',
+			'render_template'	=> 'global-templates/blocks/block-promotions.php',
+			'category'			=> 'acf-blocks',
+			'icon'				=> 'star-filled',
+			'keywords'			=> array( 'specials', 'promotions' ),
+		));
 	}
 }
 

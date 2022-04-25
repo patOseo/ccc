@@ -11939,4 +11939,8 @@ hr.divider, hr.wp-block-separator {
     -webkit-box-shadow: 1px 5px 10px -6px rgba(35, 51, 97, 0.2);
             box-shadow: 1px 5px 10px -6px rgba(35, 51, 97, 0.2); }
 
+.promotions .promotion {
+  border: 1px dashed #233361;
+  border-radius: 12px; }
+
 /*# sourceMappingURL=child-theme.css.map */
