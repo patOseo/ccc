@@ -20,9 +20,7 @@ if ( is_front_page() ) {
 
 <div class="home-slider">
 	<div class="video-container">
-		<video id="headerVideo" autoplay muted loop>
-			<source src="/wp-content/themes/carpet/images/ccc-headervideo.mp4" type="video/mp4">
-		</video>
+		<img class="w-100 h-auto" src="/wp-content/themes/carpet/images/canadian-carpet-cleaning-home.jpg" alt="Canadian Carpet Cleaning">
 	</div>
 	<div class="home-headline">
 		<h1>Carpet Cleaning and Janitorial Services in Scarborough, Bowmanville, Whitby, Oshawa &amp; the GTA</h1>
