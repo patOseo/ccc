@@ -11599,13 +11599,13 @@ footer.site-footer {
     background: #252B3C; }
   footer.site-footer .footer-widget {
     margin-bottom: 2rem;
-    color: #86898b;
+    color: #f1f1f1;
     font-size: .9rem;
     font-weight: 500; }
     footer.site-footer .footer-widget .fa {
       margin-right: .5rem; }
     footer.site-footer .footer-widget a {
-      color: #A95C5C; }
+      color: #ff5f5f; }
       footer.site-footer .footer-widget a:hover {
         color: #f03e3f; }
     footer.site-footer .footer-widget ul {

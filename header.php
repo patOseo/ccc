@@ -69,7 +69,7 @@ src="https://www.facebook.com/tr?id=154806398256826&ev=PageView&noscript=1"
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 col-sm-9">
-					<div class="contact-item"><i class="fa fa-phone d-none d-md-inline"></i><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></div> 
+					<div class="contact-item"><i class="fa fa-phone d-none d-md-inline"></i><a href="tel:<?php the_field('phone_number', 'option'); ?>"><button class="btn btn-sm btn-light mobile-ctc d-inline d-md-none mr-3"><i class="fa fa-phone"></i> Call Now</button><span class="d-none d-md-inline"><?php the_field('phone_number', 'option'); ?></a></span></div> 
 					<span class="divide">|</span> 
 					<div class="contact-item"><i class="fa fa-envelope d-none d-md-inline"></i> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></div>
 				</div>
