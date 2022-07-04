@@ -39,10 +39,12 @@ else {
 
 <div class="wrapper" id="full-width-page-wrapper">
 
+	<?php if(get_field('select_sub_menu')): $submenu = get_field('select_sub_menu'); ?>
 	<div class="sub-menu-section">
 		<button class="btn btn-primary sub-menu-toggle collapsed" data-toggle="collapse" data-target="#cccSubMenu" href="#cccSubMenu" role="button" aria-expanded="false" aria-controls="cccSubMenu">Sub Menu <i class="fa fa-chevron-down"></i></button>
-		<div id="cccSubMenu" class="sub-menu-collapse collapse"><?php dynamic_sidebar('sub-menu'); ?></div>
+		<div id="cccSubMenu" class="sub-menu-collapse collapse"><?php wp_nav_menu(array('menu' => $submenu)); ?></div>
 	</div>
+	<?php endif; ?>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
