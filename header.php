@@ -82,7 +82,7 @@ src="https://www.facebook.com/tr?id=154806398256826&ev=PageView&noscript=1"
 		</div>
 	</div>
 
-	<?php if(get_field('enable_alert_bar', 'option') == TRUE): ?>
+	<?php if(!is_page('free-quote') && get_field('enable_alert_bar', 'option') == TRUE): ?>
 		<!-- Alert Bar -->
 		<div class="alert-bar sticky-top">
 			<div class="container-fluid">
