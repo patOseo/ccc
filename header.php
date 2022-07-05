@@ -68,14 +68,10 @@ src="https://www.facebook.com/tr?id=154806398256826&ev=PageView&noscript=1"
 	<div class="top-bar">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-12 col-sm-9">
-					<div class="contact-item"><i class="fa fa-phone d-none d-md-inline"></i><a href="tel:<?php the_field('phone_number', 'option'); ?>"><button class="btn btn-sm btn-light mobile-ctc d-inline d-md-none mr-3"><i class="fa fa-phone"></i> Call Now</button><span class="d-none d-md-inline"><?php the_field('phone_number', 'option'); ?></a></span></div> 
-					<span class="divide">|</span> 
-					<div class="contact-item"><i class="fa fa-envelope d-none d-md-inline"></i> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></div>
-				</div>
-				<div class="col-3 d-none d-sm-block">
+				<div class="col-12 d-sm-block text-right">
+					<div class="contact-item text-sm-right mx-4"><i class="fa fa-phone d-none d-md-inline"></i><a href="tel:<?php the_field('phone_number', 'option'); ?>"><button class="btn btn-sm btn-light mobile-ctc d-inline d-md-none mr-3"><i class="fa fa-phone"></i> Call Now</button><span class="d-none d-md-inline"><?php the_field('phone_number', 'option'); ?></a></span></div> 
 					<?php if(have_rows('social_media', 'option')): ?>
-						<div class="top-social-links">
+						<div class="top-social-links d-inline">
 							<?php while(have_rows('social_media', 'option')): the_row(); ?>
 								<a href="<?php the_sub_field('link', 'option'); ?>" target="_blank" rel="noopener,noreferrer"><span class="sr-only">Canadian Carpet Cleaning on <?php the_sub_field('name'); ?></span><i class="fa <?php the_sub_field('icon'); ?>"></i></a>
 							<?php endwhile; ?>
@@ -88,7 +84,7 @@ src="https://www.facebook.com/tr?id=154806398256826&ev=PageView&noscript=1"
 
 	<?php if(get_field('enable_alert_bar', 'option') == TRUE): ?>
 		<!-- Alert Bar -->
-		<div class="alert-bar">
+		<div class="alert-bar sticky-top">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">

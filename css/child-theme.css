@@ -11706,9 +11706,11 @@ footer.site-footer {
 
 .alert-bar {
   padding: .5rem 0;
-  background: #f03e3f;
+  background: #233361;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  -webkit-box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.26);
+          box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.26); }
   .alert-bar p {
     margin-bottom: 0; }
   .alert-bar a {
@@ -11942,5 +11944,9 @@ hr.divider, hr.wp-block-separator {
 .promotions .promotion {
   border: 1px dashed #233361;
   border-radius: 12px; }
+
+#gform_1 input, #gform_1 textarea, #gform_1 select {
+  border-radius: 8px;
+  border: 0; }
 
 /*# sourceMappingURL=child-theme.css.map */

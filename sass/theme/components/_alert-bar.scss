@@ -1,8 +1,9 @@
 .alert-bar {
 	padding: .5rem 0;
-	background: $secondary;
+	background: $primary;
 	text-align: center;
 	color: $white;
+	box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.26);
 
 	p {
 		margin-bottom: 0;
