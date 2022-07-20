@@ -66,5 +66,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #single-wrapper -->
 
+
+<?php if(get_field('json_schema')): ?>
+	<?php the_field('json_schema'); ?>
+<?php endif; ?>
+
 <?php
 get_footer();
