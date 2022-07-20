@@ -56,3 +56,4 @@ require_once('functions/acf.php');
 require_once('functions/acf-blocks.php');
 require_once('functions/testimonials.php');
 require_once('functions/gforms.php');
+require_once('functions/schema.php');
